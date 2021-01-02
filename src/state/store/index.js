@@ -1,9 +1,9 @@
 import { createStore, combineReducers } from 'redux';
-import reducers from './reducers';
+import commentsState from '../comments/reducer';
 
 const store = createStore(
   combineReducers({
-    ...reducers
+    commentsState
   })
 );
 export default store;
